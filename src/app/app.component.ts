@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'Angular test';
+  title:string = 'Angular test';
+
+  constructor(){
+    console.log('test')
+  }
 }
