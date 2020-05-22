@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.sass'],
 })
 export class AppComponent {
-  title:string = 'Angular test';
+  title = 'Angular test'
 
-  constructor(){
+  constructor() {
     console.log('test')
   }
 }
