@@ -1,6 +1,6 @@
-<div class="m-3" [ngClass]="setClasses()">
+<div class="m-3" (change)="onToggle(todo)" [ngClass]="setClasses()">
   <input type="checkbox" />
   {{ todo.title }}
 
-  <button class="btn btn-danger btn-sm">x</button>
+  <button (click)="onDelete(todo)" class="btn btn-danger btn-sm">x</button>
 </div>
