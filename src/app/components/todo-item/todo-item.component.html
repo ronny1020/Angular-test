@@ -1,5 +1,5 @@
 <div class="m-3" (change)="onToggle(todo)" [ngClass]="setClasses()">
-  <input type="checkbox" />
+  <input type="checkbox" [checked]="todo.completed" />
   {{ todo.title }}
 
   <button (click)="onDelete(todo)" class="btn btn-danger btn-sm">x</button>
